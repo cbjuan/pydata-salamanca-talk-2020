@@ -1,1 +1,1 @@
-docker push cbjuan/basic-ds
+docker push cbjuan/example-datascience
