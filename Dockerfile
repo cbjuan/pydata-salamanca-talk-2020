@@ -5,17 +5,18 @@ LABEL maintainer="Juan Cruz-Benito <juan.cruz@ibm.com>"
 
 USER $NB_UID
 
+COPY ./requirements.txt .
+
 RUN conda update notebook ipython ipywidgets nbconvert && \
     conda install graphviz python-graphviz pydot poppler pillow && \
-    conda uninstall numpy --force && \
-    pip install -U papermill  && \
-    pip install -U nxpd && \
-    pip install -U cvxpy && \
-    pip install -U autopep8 && \
-    pip install -U RISE && \
+    pip install -U -r requirements.txt && \
     conda clean -tipsy && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
+
+# Downloading corpus for EN & ES languages provided by Spacy
+RUN python3 -m spacy download en && \
+    python3 -m spacy download es
 
 # Installing Jupyter extensions
 RUN pip install jupyter_contrib_nbextensions && \

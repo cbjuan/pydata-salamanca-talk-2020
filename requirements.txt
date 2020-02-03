@@ -1,0 +1,15 @@
+papermill
+autopep8
+RISE
+altair 
+vega_datasets
+seaborn
+plotly
+scikit-learn
+nltk
+vaderSentiment
+gensim
+sumy
+pyLDAvis
+spacy
+opencv-python
