@@ -20,9 +20,10 @@ RUN python3 -m spacy download en && \
 
 # Installing Jupyter extensions
 RUN pip install jupyter_contrib_nbextensions && \
-    jupyter contrib nbextension install --sys-prefix && \
-    jupyter nbextension disable hinterland/hinterland --sys-prefix && \
-    jupyter nbextension disable nbextensions_configurator/config_menu/main --sys-prefix
+    jupyter contrib nbextension install --sys-prefix
+
+# Enabling server extension Voilà
+RUN jupyter serverextension enable voila --sys-prefix
 
 # Enabling RISE extension
 RUN jupyter nbextension enable rise

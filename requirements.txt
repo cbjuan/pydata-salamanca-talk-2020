@@ -13,3 +13,4 @@ sumy
 pyLDAvis
 spacy
 opencv-python
+voila
