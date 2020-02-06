@@ -11906,8 +11906,8 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="https://empresas.blogthinkbig.com/wp-content/uploads/2019/03/Figura1LogoJupyter.png" alt="alt text" title="Logo Jupyter"></p>
-<h1 id="Using-Jupyter:-From-simple-personal-notebooks-to-large-deployments-with-thousands-of-users">Using Jupyter: From simple personal notebooks to large deployments with thousands of users<a class="anchor-link" href="#Using-Jupyter:-From-simple-personal-notebooks-to-large-deployments-with-thousands-of-users">&#182;</a></h1><p>Juan Cruz-Benito 
-@_juancb</p>
+<h1 id="Using-Jupyter:-From-simple-personal-notebooks-to-large-deployments-with-thousands-of-users">Using Jupyter: From simple personal notebooks to large deployments with thousands of users<a class="anchor-link" href="#Using-Jupyter:-From-simple-personal-notebooks-to-large-deployments-with-thousands-of-users">&#182;</a></h1><p>Juan Cruz-Benito</p>
+<p>🐦 @_juancb</p>
 
 </div>
 </div>
@@ -11916,13 +11916,13 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Who-am-I?">Who am I?<a class="anchor-link" href="#Who-am-I?">&#182;</a></h2><p>Juan Cruz-Benito</p>
+<h2 id="Who-am-I?">Who am I?<a class="anchor-link" href="#Who-am-I?">&#182;</a></h2><p>👋 Juan Cruz-Benito</p>
 <ul>
-<li>PhD in Computer Engineering by the University of Salamanca</li>
-<li>National award for Spanish young researchers 2019</li>
-<li>Senior Software Engineer @ IBM Researh Quantum &amp; AI</li>
-<li>Lead at IBM Quantum Experience Cloud Notebooks</li>
-<li>Nerd</li>
+<li>👨‍🎓 PhD in Computer Engineering by the University of Salamanca</li>
+<li>🏆 National award for Spanish young researchers 2019</li>
+<li>👨‍💻 Senior Software Engineer @ IBM Researh Quantum &amp; AI</li>
+<li>☁️📓 Lead at IBM Quantum Experience Cloud Notebooks</li>
+<li>🤓 Nerd</li>
 </ul>
 
 </div>
@@ -12039,7 +12039,10 @@ a.anchor-link {
 <p>I can publish my noteboks in GitHub or other platforms to let people review my research and results</p>
 <p>Example: Code for the paper</p>
 
-<pre><code>Cruz-Benito, J., Vázquez-Ingelmo, A., Sánchez-Prieto, J. C., Therón, R., García-Peñalvo, F. J., &amp; Martín-González, M. (2017). Enabling adaptability in web forms based on user characteristics detection through A/B testing and machine learning. IEEE Access, 6, 2251-2265.</code></pre>
+<pre><code>Cruz-Benito, J., Vázquez-Ingelmo, A., Sánchez-Prieto, J. C., Therón, R., 
+García-Peñalvo, F. J., &amp; Martín-González, M. (2017). Enabling adaptability 
+in web forms based on user characteristics detection through A/B testing 
+and machine learning. IEEE Access, 6, 2251-2265.</code></pre>
 <p><a href="https://github.com/cbjuan/paper-ieeeAccess-2017">https://github.com/cbjuan/paper-ieeeAccess-2017</a></p>
 
 </div>
@@ -12049,7 +12052,8 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Even after sharing my notebooks in GitHub, I can let people to execute my code online</p>
+<p>Even after sharing my notebooks in GitHub, I can let people to execute my code online via Binder (a Jupyter subproject)</p>
+<p><img src="https://miro.medium.com/max/634/1*H28MLVCxQzhuXzKzbMyiZA.png" alt="alt text" title="Launch Binder"></p>
 <p>Example: <a href="https://mybinder.org/v2/gh/cbjuan/paper-ieeeAccess-2017/master">https://mybinder.org/v2/gh/cbjuan/paper-ieeeAccess-2017/master</a></p>
 
 </div>
@@ -12143,14 +12147,36 @@ a.anchor-link {
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Debug code</span>
+<span class="c1">## -------------</span>
+<span class="c1"># For executing line by line use n</span>
+<span class="c1"># for step into a function use s </span>
+<span class="c1"># and to exit from debugging prompt use c.</span>
+<span class="kn">from</span> <span class="nn">IPython.core.debugger</span> <span class="k">import</span> <span class="n">set_trace</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">set_trace</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="What-can't-I-do-with-regular-Jupyter-notebooks-/-servers?">What can't I do with regular Jupyter notebooks / servers?<a class="anchor-link" href="#What-can't-I-do-with-regular-Jupyter-notebooks-/-servers?">&#182;</a></h2><ul>
 <li>Share a Jupyter server with many* other users</li>
-<li>Create code ready for production</li>
+<li>Create code ready for production* </li>
 <li>You can do many other things, but some of them could be difficult to achieve</li>
 </ul>
 
@@ -12178,10 +12204,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="OK.-I-want-to-use-Jupyter-Notebooks-with-friends-or-colleagues">OK. I want to use Jupyter Notebooks with friends or colleagues<a class="anchor-link" href="#OK.-I-want-to-use-Jupyter-Notebooks-with-friends-or-colleagues">&#182;</a></h2><p>What should I do? Use:</p>
+<h2 id="OK.-I-want-to-use-Jupyter-Notebooks-with-friends-or-colleagues">OK. I want to use Jupyter Notebooks with friends or colleagues<a class="anchor-link" href="#OK.-I-want-to-use-Jupyter-Notebooks-with-friends-or-colleagues">&#182;</a></h2><p>What should I do? Options:</p>
 <ul>
 <li>Jupyter Enterprise Gateway <a href="https://jupyter-enterprise-gateway.readthedocs.io/en/latest/">https://jupyter-enterprise-gateway.readthedocs.io/en/latest/</a></li>
 <li>JupyterHub <a href="https://jupyterhub.readthedocs.io/en/stable/">https://jupyterhub.readthedocs.io/en/stable/</a></li>
+<li>BinderHub <a href="https://binderhub.readthedocs.io/en/latest/">https://binderhub.readthedocs.io/en/latest/</a></li>
 </ul>
 
 </div>
@@ -12200,7 +12227,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="How-much-users-can-I-manage-with-a-JupyterHub?">How much users can I manage with a JupyterHub?<a class="anchor-link" href="#How-much-users-can-I-manage-with-a-JupyterHub?">&#182;</a></h3><p>Depending on your hardware resources and how do you deploy it. Theoretically, nearly infinite users :D</p>
+<h3 id="How-much-users-can-I-manage-with-a-JupyterHub?">How much users can I manage with a JupyterHub?<a class="anchor-link" href="#How-much-users-can-I-manage-with-a-JupyterHub?">&#182;</a></h3><p>Depending on your hardware resources and how do you deploy it. Theoretically, nearly infinite users 🤯</p>
 
 </div>
 </div>
@@ -12223,7 +12250,7 @@ a.anchor-link {
 <li>+100K users in our Quantum platform</li>
 <li>Deployed on IBM Cloud using Kubernetes</li>
 <li>Individual storage for each user</li>
-<li>All the quantum libraries and typical data science/research stack installed</li>
+<li>All the quantum computing libraries and typical data science/research stack installed</li>
 <li>Integration with our other cloud tools</li>
 </ul>
 
@@ -12234,7 +12261,21 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Questions?">Questions?<a class="anchor-link" href="#Questions?">&#182;</a></h2>
+<h2 id="More-Jupyter-Projects">More Jupyter Projects<a class="anchor-link" href="#More-Jupyter-Projects">&#182;</a></h2><ul>
+<li>JupyterLab <a href="https://jupyterlab.readthedocs.io/en/stable/">https://jupyterlab.readthedocs.io/en/stable/</a></li>
+<li>Voilà <a href="https://voila-gallery.org/">https://voila-gallery.org/</a></li>
+<li>Many others <a href="https://github.com/jupyter">https://github.com/jupyter</a></li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Questions?">Questions?<a class="anchor-link" href="#Questions?">&#182;</a></h2><p><img src="https://media.giphy.com/media/L7ONYIPYXyc8/giphy.gif" alt="alt text" title="IBM Q"></p>
+
 </div>
 </div>
 </div></section></section><section><section>
@@ -12244,10 +12285,18 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="References:">References:<a class="anchor-link" href="#References:">&#182;</a></h2><ul>
 <li>Project Jupyter <a href="https://jupyter.org/">https://jupyter.org/</a></li>
-<li>JupyterHub website <a href="https://jupyterhub.readthedocs.io/en/stable/">https://jupyterhub.readthedocs.io/en/stable/</a></li>
 <li>Joel Grus "I don't like notebooks" <a href="https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/preview">https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/preview</a></li>
 <li>Austin Z. Henley "What's wrong with computational notebooks?" <a href="https://web.eecs.utk.edu/~azh/blog/notebookpainpoints.html">https://web.eecs.utk.edu/~azh/blog/notebookpainpoints.html</a></li>
 </ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Link-to-presentation-and-materials">Link to presentation and materials<a class="anchor-link" href="#Link-to-presentation-and-materials">&#182;</a></h2><p><a href="https://github.com/cbjuan/pydata-salamanca-talk-2020">https://github.com/cbjuan/pydata-salamanca-talk-2020</a></p>
 
 </div>
 </div>
